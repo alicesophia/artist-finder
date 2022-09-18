@@ -9,16 +9,11 @@ const Artist = ({ artist }) => {
     <div>
       <h3>{name}</h3>
       <p>{followers.total} followers</p>
-      <p>genres: {genres.join(", ")}</p>
+      <p>{genres.join(", ")}</p>
       <img
         src={images[0] && images[0].url}
         alt="artist-profile-image"
-        style={{
-          width: 300,
-          height: 300,
-          borderRadius: 150,
-          objectFit: "cover"
-        }}
+        className="artist-profile"
       />
     </div>
   )
